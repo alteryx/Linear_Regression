@@ -28,17 +28,17 @@ Linear_Regression
       
       <div id='mname' class="qconst">
 <!--  Model Name  -->
-<label for="Model Name">Model name</label>
+<label for="Model Name">XMSG("Model name")</label>
 <alteryx-pluginwidget type="TextBox" password="false" id="Model Name" dataName="Model Name"></alteryx-pluginwidget>
 </div>
       <div id='yvar' class="qconst">
 <!--  Y Var  -->
-<label for="Y Var">Select the target variable</label>
+<label for="Y Var">XMSG("Select the target variable")</label>
 <alteryx-pluginwidget type="DropDown" dataType="FieldSelector" inputNumber="0" connectionNumber="0" fieldType="Numeric" id="Y Var" dataName="Y Var"></alteryx-pluginwidget>
 </div>
       <div id='xvars' class="qconst">
 <!--  X Vars  -->
-<label for="X Vars">Select the predictor variables</label>
+<label for="X Vars">XMSG("Select the predictor variables")</label>
 <alteryx-pluginwidget type="MultiSelectListBox" dataType="MultiStringSelector" inputNumber="0" connectionNumber="0" fieldType="All" id="X Vars" dataName="X Vars"></alteryx-pluginwidget>
 </div>
       <button class='default-button primary switch' id='switch-to-customize'
@@ -117,12 +117,12 @@ Linear_Regression
            <div id = 'show-on-cv' class = 'indent-one'> 
              
 <!--  nfolds  -->
-<label for="nfolds">Number of folds</label>
+<label for="nfolds">XMSG("Number of folds")</label>
 <alteryx-pluginwidget type="NumericSpinner" default="5" min="1" max="100" step="1" id="nfolds" dataName="nfolds"></alteryx-pluginwidget>
 
              
 <!--  lambda  -->
-<label for="lambda">What type of model?</label>
+<label for="lambda">XMSG("What type of model?")</label>
 <alteryx-pluginwidget type="RadioGroup" group="lambda" id="lambda" dataName="lambda">
   <alteryx-option uiobject="Simpler model" default="true">lambda_1se</alteryx-option>
   <alteryx-option uiobject="Model with lower in-sample mean squared error">lambda_min</alteryx-option>
@@ -144,7 +144,7 @@ Linear_Regression
             <div id = 'show-on-no-cv'> 
              
 <!--  lambda_no_cv  -->
-<label for="lambda_no_cv">Value of lambda used for predictions</label>
+<label for="lambda_no_cv">XMSG("Value of lambda used for predictions")</label>
 <alteryx-pluginwidget type="NumericSpinner" default="0.5" min="0" max="10" step="0.01" id="lambda_no_cv" dataName="lambda_no_cv"></alteryx-pluginwidget>
 
            </div>
@@ -165,14 +165,14 @@ Linear_Regression
                <div id='div-nfolds-external'>
                  
 <!--  nfolds_external  -->
-<label for="nfolds_external">Number of folds</label>
+<label for="nfolds_external">XMSG("Number of folds")</label>
 <alteryx-pluginwidget type="NumericSpinner" default="5" min="1" max="100" step="1" id="nfolds_external" dataName="nfolds_external"></alteryx-pluginwidget>
 
                </div>
                <div id='div-number-trials'>
                  
 <!--  numberTrials  -->
-<label for="numberTrials">Number of trials</label>
+<label for="numberTrials">XMSG("Number of trials")</label>
 <alteryx-pluginwidget type="NumericSpinner" default="3" min="1" max="100" step="1" id="numberTrials" dataName="numberTrials"></alteryx-pluginwidget>
 
                </div>
@@ -196,7 +196,7 @@ Linear_Regression
       <div class='tabpage has-hint' id='tabpage-graphics'>
         
 <!--  graph.resolution  -->
-<label for="graph.resolution">Graph resolution</label>
+<label for="graph.resolution">XMSG("Graph resolution")</label>
 <alteryx-pluginwidget type="DropDown" id="graph.resolution" dataName="graph.resolution">
   <alteryx-option uiobject="1x (96 dpi)" default="true">1x</alteryx-option>
   <alteryx-option uiobject="2x (192 dpi)">2x</alteryx-option>
