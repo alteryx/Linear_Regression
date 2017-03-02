@@ -51,7 +51,10 @@ checkLowN(
   data = inputs$the.data,
   threshold = 25,
   mult = 1,
-  msg = "The incoming data may not have enough rows to generate a model successfully.  "
+  msg = 
+    XMSG(
+      in.targetString_sc = "The incoming data may not have enough rows to generate a model successfully."
+    )
 )
 AlteryxPredictive:::runLinearRegression(inputs, config)
  
